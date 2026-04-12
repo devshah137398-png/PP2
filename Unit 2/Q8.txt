@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+struct DemoStruct { int a; char b; };
+union DemoUnion { int a; char b; };
+
+int main() {
+    printf("Size of Structure: %zu\n", sizeof(struct DemoStruct));
+    printf("Size of Union: %zu\n", sizeof(union DemoUnion));
+    return 0;
+}

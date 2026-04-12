@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+struct DOB {
+    int d, m, y;
+};
+
+struct student {
+    char name[20];
+    struct DOB birthdate; // Nested structure
+};
+
+int main() {
+    struct student s = {"Rahul", {15, 8, 2000}};
+    printf("Student: %s, DOB: %d/%d/%d", s.name, s.birthdate.d, s.birthdate.m, s.birthdate.y);
+    return 0;
+}
